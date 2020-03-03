@@ -13,21 +13,40 @@ header {
 }
 
 div.magikarp {
-    height: 20vh;
+    height: 40vh;
     width: 12vw;
-    background: #ffffff;
+    background: green;
+    margin-right: 5rem;
+    flex-direction: column;
+}
+
+div.mag_stat {
+    height: 10vh;
+    width: 12vw;
+    background: green;
+    margin-top: 2rem;
 }
 
 div.comparison {
-    height: 20vh;
+    height: 40vh;
     width: 12vw;
     background: white;
+    margin-left: 5rem;
+    flex-direction: column;
+}
+
+div.comparison_stat{
+    height: 10vh;
+    width: 12vw;
+    background: white;
+    margin-top: 2rem;
 }
 
 div.fullscreen {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 div.verticalCenter {
