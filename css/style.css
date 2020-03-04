@@ -4,7 +4,8 @@
 }
 
 body {
-  background: blue;
+  background: url("../img/water.jpg");
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +18,7 @@ body {
 }
 
 header {
-  height: 15vh;
+  height: 20vh;
   background: red;
 }
 
@@ -52,6 +53,12 @@ div.comparison {
 
 div.comparison_info {
   background: white;
+}
+
+div.comparison_points {
+  background: white;
+  margin-top: 150vh;
+  margin-bottom: 15vh;
 }
 
 div.fullscreen {

@@ -18,7 +18,7 @@ request.onload = function(){
     var i = 0
 
     while(i < data.stats.length) {
-        var p = document.createElement('p')
+        var p = document.createElement('h4')
         p.innerHTML = data.stats[i].stat.name
         mag_stats.appendChild(p)
         
@@ -37,7 +37,6 @@ poke_list.open("GET", "https://pokeapi.co/api/v2/pokemon?limit=99999");
 
 poke_list.onload = function(){
     var data = JSON.parse(this.response)
-    console.log(data)
     var i = 0
     while(i < data.results.length){
         var option = document.createElement("option")
@@ -75,7 +74,7 @@ document.querySelector("#poke_select").addEventListener("input", function(){
         var i = 0
 
         while(i < data.stats.length) {
-            var p = document.createElement('p')
+            var p = document.createElement('h4')
             p.innerHTML = data.stats[i].stat.name
             comparison_stats.appendChild(p)
             
@@ -89,3 +88,14 @@ document.querySelector("#poke_select").addEventListener("input", function(){
 
     request.send();
 })
+
+var comparison_points = new XMLHttpRequest();
+comparison_points.open("GET", "https://pokeapi.co/api/v2/pokemon");
+
+comparison_points.onload = function(){
+    var data = JSON.parse(this.response)
+    console.log(data)
+    var i = 0
+   while(i < data.)
+
+}
