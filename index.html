@@ -9,16 +9,31 @@
 </head>
 <body>
     <div class="fullscreen">
-        <header>Magikarp stat comparison</header>
+        <header>
+            <h1>Magikarp stat comparison</h1>
+            <select id="poke_select">
+                <option value="empty" selected hidden>Pick Pokémon</option>
+            </select>
+        </header>
         <div class="verticalCenter">
             <div class="magikarp">
-                <img src="" alt="">
-                <div class="mag_stat"></div>
+                <img src="img/fishes.png" alt="">
+                <div class="mag_info">
+                    <p>Types:</p>
+                    <div class="mag_types"></div>
+                    <p>Stats:</p>
+                    <div class="mag_stats"></div>
+                </div>
             </div>
         
             <div class="comparison">
-                <img src="" alt="">
-                <div class="comparison_stat"></div>
+                <img class="comparison_pic" src="img/ditto.png" alt="">
+                <div class="comparison_info">
+                    <p>Types:</p>
+                    <div class="comparison_types"></div>
+                    <p>Stats:</p>
+                    <div class="comparison_stats"></div>
+                </div>
             </div>
         </div>
     </div>

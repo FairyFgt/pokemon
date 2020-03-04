@@ -1,5 +1,9 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+}
+
+body {
   background: blue;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,7 +17,6 @@ body {
 }
 
 header {
-  width: 100vw;
   height: 15vh;
   background: red;
 }
@@ -21,7 +24,6 @@ header {
 div.magikarp {
   height: 40vh;
   width: 12vw;
-  background: green;
   margin-right: 5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -29,17 +31,18 @@ div.magikarp {
           flex-direction: column;
 }
 
-div.mag_stat {
-  height: 10vh;
+img {
   width: 12vw;
-  background: green;
-  margin-top: 2rem;
+  height: 12vw;
+}
+
+div.mag_info {
+  background: white;
 }
 
 div.comparison {
   height: 40vh;
   width: 12vw;
-  background: white;
   margin-left: 5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -47,11 +50,8 @@ div.comparison {
           flex-direction: column;
 }
 
-div.comparison_stat {
-  height: 10vh;
-  width: 12vw;
+div.comparison_info {
   background: white;
-  margin-top: 2rem;
 }
 
 div.fullscreen {
@@ -81,5 +81,10 @@ div.verticalCenter {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+select {
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
