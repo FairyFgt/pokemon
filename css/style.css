@@ -19,7 +19,25 @@ body {
 
 header {
   height: 20vh;
-  background: red;
+  background: #22c1c3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#22c1c3), to(#2d40fd));
+  background: linear-gradient(180deg, #22c1c3 0%, #2d40fd 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: black 0 .5rem 1rem;
+          box-shadow: black 0 .5rem 1rem;
+  margin-bottom: 1rem;
 }
 
 div.magikarp {
@@ -39,6 +57,9 @@ img {
 
 div.mag_info {
   background: white;
+  border-radius: 1rem;
+  padding-left: 7%;
+  border-style: solid;
 }
 
 div.comparison {
@@ -53,6 +74,9 @@ div.comparison {
 
 div.comparison_info {
   background: white;
+  border-radius: 1rem;
+  padding-left: 7%;
+  border-style: solid;
 }
 
 div.comparison_points {
@@ -84,8 +108,13 @@ div.horizontalCenter {
           justify-content: center;
 }
 
+div.comparison_points {
+  border: black 0.1rem solid;
+}
+
 select {
   margin: 0;
   padding: 0;
+  border-radius: 50rem;
 }
 /*# sourceMappingURL=style.css.map */

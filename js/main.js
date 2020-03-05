@@ -75,6 +75,7 @@ document.querySelector("#poke_select").addEventListener("input", function(){
             var p = document.createElement("p")
             p.innerHTML = data.types[type_iteration].type.name
             comparison_types.appendChild(p)
+            type_iteration++
 
         }
         comparison_stats.innerHTML = ''
