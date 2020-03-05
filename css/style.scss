@@ -47,21 +47,19 @@ div.comparison_info{
 
 div.comparison_points {
     background: white;
-    margin-top: 150vh;
+    margin-top: 90vh;
     margin-bottom: 15vh;
 }
 
 div.fullscreen {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-div.verticalCenter {
-    flex: 1;
+div.horizontalCenter {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
