@@ -109,36 +109,25 @@ document.querySelector("#poke_select").addEventListener("input", function(){
 
 
 /*
-var comparison_points = new XMLHttpRequest();
-comparison_points.open("GET", "https://pokeapi.co/api/v2/pokemon");
-
-comparison_points.onload = function(){
-    var data = JSON.parse(this.response)
-    console.log(data)
-    var i = 0
-   while(i < data.)
-
-}
-*/
-
-
-/*
 Straight out of Github
 Function moves the background while scrolling, also scaling it all whilst making it move smoother
 */
 
-function Scroll_bg() {
-    var window_height = window.innerHeight;
-    var window_width = window.innerWidth;
-    var scroll = (window.pageYOffset) / (document.body.clientHeight - window_height);
-    var push_distance = -scroll * (window_height/5);
-    if (window_width > 590) {
-        document.body.style.background = 'url("img/water.jpg") 0px ' + push_distance + 'px / 100vw 120vh no-repeat fixed';
+function calcBG() {
+    var windowHeight = window.innerHeight;
+    var windowWidth = window.innerWidth;
+    var imageHeight = 332;
+    var imageWidth = 590;
+    var heightScale = windowHeight / imageHeight;
+    var scroll = (window.pageYOffset) / (document.body.clientHeight - windowHeight);
+    var pushDistance = -scroll * (windowHeight/5);
+    if (windowWidth > imageWidth * heightScale) {
+        document.body.style.background = 'url("img/water.jpg") 0px ' + pushDistance + 'px / 100vw 120vh no-repeat fixed';
     } else {
-        document.body.style.background = 'url("img/water.jpg") 0px ' + push_distance + 'px / auto 120vh no-repeat fixed';
+        document.body.style.background = 'url("img/water.jpg") 0px ' + pushDistance + 'px / auto 120vh no-repeat fixed';
     }
 }
 
-window.addEventListener('scroll', Scroll_bg);
-window.addEventListener('resize', Scroll_bg);
-Scroll_bg();
+window.addEventListener('scroll', calcBG);
+window.addEventListener('resize', calcBG);
+calcBG();
