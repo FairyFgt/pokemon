@@ -79,7 +79,13 @@ document.querySelector("#poke_select").addEventListener("input", function(){
 
         }
         comparison_stats.innerHTML = ''
-        comparison_pic.src = data.sprites.front_default
+
+        if(! data.sprites.front_default){
+            comparison_pic.src = "img/ditto.png"
+        }else{
+
+            comparison_pic.src = data.sprites.front_default
+        }
         var i = 0
         var points = 0
         while(i < data.stats.length) {
